@@ -1,0 +1,120 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(href='https://fonts.googleapis.com/css?family=Baloo Bhai' rel='stylesheet')
+  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css' integrity='sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==' crossorigin='anonymous' referrerpolicy='no-referrer')
+  title Search about Article
+  link(rel='stylesheet' href='../static/style.css')
+  link(rel='stylesheet' href='../static/index-responsive.css')
+  link(rel='stylesheet' href='../static/searchres.css')
+  link(rel='stylesheet' href='../static/utils.css')
+  link(rel='stylesheet' href='../static/search.css')
+// Navigation
+.main-container
+  nav.navigation.nav-width.m-auto.nav-top-m
+    ul
+      a(href='/')
+        img(src='../static/img/nav-logo.png' alt='')
+      li.item-3
+        a(href='/')
+          i.fa-solid.fa-house
+          |  Home
+      li.item-4
+        a(href='/signin')
+          i.fa-solid.fa-arrow-right-to-bracket
+          |  Sign In
+      li.item-3
+        a(href='/contact')
+          i.fa-regular.fa-address-book
+          |  Contact us
+    .search
+      form(action='/search' method='get')
+        input(type='text' name='query' placeholder='search about article')
+        button.btn-search Search
+  hr.nav-line
+// Blog container
+.blog-container
+  .blog.width-1.m-auto
+    h2.blog-heading.font-4 Seach Results for Lorem (0.04 seconds)
+    .article
+      .article-img-left
+        img(src='../static/img/article-1.jpg' alt='article')
+      .article-content-right
+        a(href='/blog')
+          h3.font-1
+            | Lorem ipsum dolor sit amet consectetur adipisicing ipsum dolor sit amet
+        .font-1.h-1 Author : Asad Khan
+        .font-1.h-1
+          | 09 Jun 2023 | 9 min to
+          | read
+    .article1
+      .article1-img-left
+        img(src='../static/img/article2.jpg' alt='article')
+      .article1-content-right
+        a(href='/blog')
+          h3.font-1
+            | Lorem ipsum dolor sit amet consectetur adipisicing ipsum amet
+        .font-1.h-1 Author : Asad Khan
+        .font-1.h-1
+          | 09 Jun 2023 | 9 min to
+          | read
+    .article2
+      .article2-img-left
+        img(src='../static/img/article3.jpg' alt='article')
+      .article2-content-right
+        a(href='/blog')
+          h3.font-1
+            | Lorem ipsum dolor sit amet consectetur adipisicing ipsum dolor amet
+        .font-1.h-1 Author : Asad Khan
+        .font-1.h-1
+          | 09 Jun 2023 | 9 min to
+          | read
+    .article3
+      .article3-img-left
+        img(src='../static/img/article-4.jpg' alt='article')
+      .article3-content-right
+        h3.font-1
+          a(href='/blog')
+            | Lorem ipsum dolor sit amet consectetur adipisicing ipsum dolor
+            | sit
+        .font-1.h-1 Author : Asad Khan
+        .font-1.h-1
+          | 09 Jun 2023 | 9 min to
+          | read
+  // Interaction Section
+  .interaction-container
+    .interaction.width-1.m-auto.font-1
+      .intr-1
+        p
+          a(href='/') Home
+        p
+          a(href='/blog') Blog
+        p
+          a(href='/write') Write
+        p
+          a(href='/signin') Sign In
+        p
+          a(href='/contact') Contact Us
+      .intr-1
+        p
+          a(href='/signup') Get Started
+        p
+          a(href='/write') Start Reading
+      .intr-1
+        h4.font-1 Join Us
+        p
+          a(href='https://web.facebook.com/Muhammadasadshamsuddin/' target='_blank')
+            img(src='../static/img/footer/facebook.png' alt='')
+        p
+          a(href='https://www.linkedin.com/in/muhammad-asad-shams-ud-din/' target='_blank')
+            img(src='img/footer/linkedin.png' alt='')
+        p
+          a(href='https://twitter.com/asadshamsuddin' target='_blank')
+            img(src='../static/img/footer/twitter.png' alt='')
+  // Footer
+  .footer-container
+    footer.footer.width-2.m-auto
+      | Copy Write &copy; AK Developer&apos;s 2023
+      script(src='../static/index.js')
