@@ -1,0 +1,193 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(href='https://fonts.googleapis.com/css?family=Baloo Bhai' rel='stylesheet')
+  title www.akblogger&apos;s.com
+  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css' integrity='sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==' crossorigin='anonymous' referrerpolicy='no-referrer')
+  // linked css
+  link(rel='stylesheet' href='../static/style.css')
+  link(rel='stylesheet' href='../static/utils.css')
+  link(rel='stylesheet' href='../static/index-responsive.css')
+// Navigation
+.main-container
+  nav.navigation.nav-width.m-auto.nav-top-m
+    ul
+      a(href='/')
+        img(src='../static/img/nav-logo.png' alt='')
+      li.item-3
+        a(href='/')
+          i.fa-solid.fa-house
+          |  Home
+      li.item-2
+        a(href='/write')
+          i.fa-solid.fa-pen-nib
+          |  Write
+      li.item-3
+        a(href='/contact')
+          i.fa-regular.fa-address-book
+          |  Contact us
+      li.item-4
+        a(href='/signin')
+          i.fa-solid.fa-arrow-right-to-bracket
+          |  Sign In
+    .search.font-1
+      button.btn
+        a(href='/signup')  Get Started 
+  hr.nav-line
+// Home
+.home-container
+  .content.width-1.m-auto
+    .home-left-content
+      h3.home-title Be Unstopable
+      p.home-content
+        | Discover stories, thinking, and expertise 
+        br
+        | from writers on any topic.
+      button.home-button
+        a(href='/write')
+          | Start Reading Now 
+          i.fa-solid.fa-arrow-right
+    .home-right-content
+      img(src='../static/img/head-img.png' alt='')
+hr.line
+// Mission section
+.section-container
+  .mission-section.width-1.m-auto
+    .card
+      img(src='../static/img/blog.png' alt='image not present here')
+      h2.section-heading Our Blogs
+      p
+        | Lorem ipsum dolor sit amet ipsum dolor sit amet
+    .card
+      img(src='../static/img/targeting.png' alt='image not present here')
+      h2.section-heading Our Vision
+      p
+        | Lorem ipsum dolor sit amet ipsum dolor sit amet
+    .card
+      img(src='../static/img/our-mission.png' alt='image not present here')
+      h2.section-heading Our Mission
+      p
+        | Lorem ipsum dolor sit amet ipsum dolor sit amet
+    .card
+      img(src='../static/img/teamwork.png' alt='image not present here')
+      h2.section-heading Our Team
+      p
+        | Lorem ipsum dolor sit amet ipsum dolor sit amet
+hr.nav-line.width-1.m-auto
+// Blog container
+.blog-container
+  .blog.width-1.m-auto
+    h2.blog-heading Featured / Popular Articles
+    .article
+      .article-img-left
+        img(src='../static/img/article-1.jpg' alt='article')
+      .article-content-right
+        a(href='/blog')
+          h3.font-1
+            | Lorem ipsum dolor sit amet consectetur adipisicing ipsum dolor sit amet
+        span.font-1 Author : Asad Khan
+        span.font-1
+          | 09 Jun 2023 | 9 min to
+          | read
+        p.font-1.article-content-right-desc Description : Lorem ipsum dolor sit data
+    .article1
+      .article1-img-left
+        img(src='../static/img/article2.jpg' alt='article')
+      .article1-content-right
+        a(href='/blog')
+          h3.font-1
+            | Lorem ipsum dolor sit amet consectetur adipisicing ipsum amet
+        span.font-1 Author : Asad Khan
+        span.font-1
+          | 09 June 2021 | 6 min to
+          | read
+        p.font-1.article1-content-right-desc Description : Lorem ipsum dolor sit data
+    .article2
+      .article2-img-left
+        img(src='../static/img/article3.jpg' alt='article')
+      .article2-content-right
+        a(href='/blog')
+          h3.font-1
+            | Lorem ipsum dolor sit amet consectetur adipisicing ipsum dolor amet
+        span.font-1 Author : Asad Khan
+        span.font-1
+          | 09 Sep 2022 | 5 min to
+          | read
+        p.font-1.article2-content-right-desc Description : Lorem ipsum dolor sit data
+    .article3
+      .article3-img-left
+        img(src='../static/img/article-4.jpg' alt='article')
+      .article3-content-right
+        h3.font-1
+          a(href='/blog')
+            | Lorem ipsum dolor sit amet consectetur adipisicing ipsum dolor
+            | sit
+        span.font-1 Author : Asad Khan
+        span.font-1
+          | 23 Jun 2023 | 7 min to
+          | read
+        p.font-1.article3-content-right-desc Description : Lorem ipsum dolor sit data
+  hr.nav-line.width-1.m-auto
+  // Article section
+  .targate-container
+    .targated-people-container.width-1.m-auto
+      h2 People Also Know About That
+      .targated-people.width-2.m-auto
+        .targate
+          img(src='../static/img/target-1.jpg' alt='')
+          h3.font-1
+            a(href='/blog')  Lorem ipsum dolor sit amet, consectetur adipisicing.
+          span.font-1 Author : Asad Khan | 4 min to read
+        .targate
+          img(src='../static/img/target-2.jpg' alt='')
+          h3.font-1
+            a(href='/blog')  Lorem ipsum dolor sit amet, consectetur adipisicing.
+          span.font-1 Author : Asad Khan | 4 min to read
+        .targate
+          img(src='../static/img/target-3.jpg' alt='')
+          h3.font-1
+            a(href='/blog') Lorem ipsum dolor sit amet, consectetur adipisicing.
+          span.font-1 Author : Asad Khan | 4 min to read
+        .targate
+          img(src='../static/img/target-4.jpg' alt='')
+          h3.font-1
+            a(href='/blog')  Lorem ipsum dolor sit amet, consectetur adipisicing.
+          span.font-1 Author : Asad Khan | 4 min to read
+  hr.nav-line
+  // Interaction Section
+  .interaction-container
+    .interaction.width-1.m-auto.font-1
+      .intr-1
+        p
+          a(href='/') Home
+        p
+          a(href='/blog') Blog
+        p
+          a(href='/write') Write
+        p
+          a(href='/signin') Sign In
+        p
+          a(href='/contact') Contact Us
+      .intr-1
+        p
+          a(href='/signup') Get Started
+        p
+          a(href='/write') Start Reading
+      .intr-1
+        h4.font-1 Join Us
+        p
+          a(href='https://web.facebook.com/Muhammadasadshamsuddin/' target='_blank')
+            img(src='../static/img/footer/facebook.png' alt='')
+        p
+          a(href='https://www.linkedin.com/in/muhammad-asad-shams-ud-din/' target='_blank')
+            img(src='../static/img/footer/linkedin.png' alt='')
+        p
+          a(href='https://twitter.com/asadshamsuddin' target='_blank')
+            img(src='../static/img/footer/twitter.png' alt='')
+  // Footer
+  .footer-container
+    footer.footer.width-2.m-auto
+      | Copy Write &copy; AK Developer&apos;s 2023 | All Rights Reserved
+script(src='../static/index.js')

@@ -1,0 +1,48 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css' integrity='sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==' crossorigin='anonymous' referrerpolicy='no-referrer')
+  link(rel='stylesheet' href='../static/signin.css')
+  link(rel='stylesheet' href='../static/style.css')
+  link(rel='stylesheet' href='../static/utils.css')
+  link(rel='stylesheet' href='../static/signin-res.css')
+  title Sign In
+// Navigation
+.main-container
+  nav.navigation.nav-width.m-auto.nav-top-m
+    ul
+      a(href='/')
+        img(src='../static/img/nav-logo.png' alt='')
+      li.item-3
+        a(href='/')
+          i.fa-solid.fa-house
+          |  Home
+      li.item-2
+        a(href='/write')
+          i.fa-solid.fa-pen-nib
+          |  Write
+      li.item-3
+        a(href='/contact')
+          i.fa-regular.fa-address-book
+          |  Contact us
+    .search.font-1
+      button.btn
+        a(href='/signup') Signup Now 
+  hr.nav-line
+// sign-in form
+.signin-container
+  form.form-control.font-1(action='/signin' method='post')
+    h2.font-1 Please Signin Here 
+    .box
+      i.fa-solid.fa-user
+      input(autocomplete='false' type='email' name="email" placeholder=' Enter Your Gmail' required='')
+    .box
+      i.fa-solid.fa-key
+      input(autocomplete='false' name='password' type='text' placeholder='Enter Your Password' required='')
+    button.btn-sn Sign In
+    p
+      | Creat a New Account ? 
+      a(href='/signup')  Sign Up
+      script(src='../static/index.js')

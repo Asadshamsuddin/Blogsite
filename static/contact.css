@@ -1,0 +1,83 @@
+*{
+    overflow: none;
+}
+.form-container{
+height: 517px;
+/* background-color: white;s */
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+.form-container::before{
+    content: "";
+    background: url(../static/img/contact-bg.jpg) no-repeat center center/cover;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    z-index: -1;
+    opacity: 0.2;
+}
+.signup h2{
+    margin: 22px 0px;
+    font-size: 2rem;
+}
+.nav-form input {
+    width: 25vw;
+    padding: 5px 7px;
+    outline: none;
+    border: 1px solid var(--color6);
+    border-radius: 5px;
+    font-family: var(--font1);
+}
+.nav-form .btn-search{
+    padding: 4px 6px;
+    cursor: pointer;
+    border: 1px solid var(--color6);
+    border-radius: 5px;
+    margin: 0px 4px;
+    font-family: var(--font1);
+    background-color: var(--color6);
+    color: var(--color7);
+    transition: all 0.3s ease-in;
+}
+.nav-form .btn-search:hover{
+    color: black;
+    background-color:#ffc010;
+
+}
+.signup input{
+   width: 50vw;
+    outline: none;
+    padding: 6px 8px;
+    border-radius: 5px;
+    background: none;
+    border: none;
+    margin: 4px 0px;
+}
+.signup .cn-box{
+    border-bottom: 2px solid black;
+}
+.signup .btn-cn{
+    margin: 30px 0px;
+    padding: 8px 10px;
+    background-color: var(--color2);
+    border: 2px solid var(--color2);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.33s ease-in;
+}
+.signup .btn-cn:hover{
+    background-color: #f1b714;
+    border: 2px solid #f1b714; 
+}
+
+.footer{
+    background-color: var(--color2);
+    color: var(--color6);
+}
+.footer-container{
+    background-color: var(--color2);
+}
+

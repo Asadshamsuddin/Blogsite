@@ -1,0 +1,57 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(href='https://fonts.googleapis.com/css?family=Baloo Bhai' rel='stylesheet')
+  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css' integrity='sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==' crossorigin='anonymous' referrerpolicy='no-referrer')
+  title www.akblogger&apos;s.com
+  link(rel='stylesheet' href='../static/style.css')
+  link(rel='stylesheet' href='../static/contact.css')
+  link(rel='stylesheet' href='../static/contactres.css')
+  link(rel='stylesheet' href='../static/utils.css')
+// Navigation
+.main-container
+  nav.navigation.nav-width.m-auto.nav-top-m
+    ul
+      a(href='/')
+        img(src='../static/img/nav-logo.png' alt='')
+      li.item-3
+        a(href='/')
+          i.fa-solid.fa-house
+          |  Home
+      li.item-2
+        a(href='/write')
+          i.fa-solid.fa-pen-nib
+          |  Write
+      li.item-4
+        a(href='/signin')
+          i.fa-solid.fa-arrow-right-to-bracket
+          |  Sign In
+    .search.font-1
+      form.nav-form(action='/search' method='get' name='query')
+        input(type='text' name='query' placeholder='search about article')
+        button.btn-search Search
+  hr.nav-line
+// form
+.form-container
+  form.signup.font-1(action='/contact' method='post')
+    h2 Feel Free To Contact Us
+    .cn-box
+      i.fa-solid.fa-user
+      input(type='text' name='name' placeholder='Enter Your Name' required='')
+    .cn-box
+      i.fa-solid.fa-person-half-dress
+      input(type='text' name='age' placeholder='Enter Your Age' required='')
+    .cn-box
+      i.fa-solid.fa-location-dot
+      input(type='text' name='location' placeholder='Enter Your Location' required='')
+    .cn-box
+      i.fa-solid.fa-exclamation
+      input(type='text' name='con' placeholder='Write Your concern' required='')
+    div
+      button.btn-cn Submit
+// Footer
+.footer-container
+  footer.footer.width-2.m-auto
+    | Copy Write &copy; AK Developer&apos;s 2023

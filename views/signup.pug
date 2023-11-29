@@ -1,0 +1,56 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(href='https://fonts.googleapis.com/css?family=Baloo Bhai' rel='stylesheet')
+  title www.akblogger&apos;s.com
+  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css' integrity='sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==' crossorigin='anonymous' referrerpolicy='no-referrer')
+  // linked css
+  link(rel='stylesheet' href='../static/style.css')
+  link(rel='stylesheet' href='../static/contact.css')
+  link(rel='stylesheet' href='../static/utils.css')
+  link(rel='stylesheet' href='../static/index-responsive.css')
+// Navigation
+.main-container
+  nav.navigation.nav-width.m-auto.nav-top-m
+    ul
+      a(href='/')
+        img(src='../static/img/nav-logo.png' alt='')
+      li.item-3
+        a(href='/')
+          i.fa-solid.fa-house
+          |  Home
+      li.item-2
+        a(href='/write')
+          i.fa-solid.fa-pen-nib
+          |  Write
+      li.item-3
+        a(href='/contact')
+          i.fa-regular.fa-address-book
+          |  Contact us
+      li.item-4
+        a(href='/signin')
+          i.fa-solid.fa-arrow-right-to-bracket
+          |  Sign In
+  hr.nav-line
+.form-container
+  form.signup.font-1(action='/signup' method='post')
+    h2 Please Sign Up Signup
+    .cn-box
+      i.fa-solid.fa-user
+      input(type='text' name='name' placeholder='Enter Your Name' required='')
+    .cn-box
+      i.fa-solid.fa-envelope
+      input(type='email' name='email' placeholder='Enter Your Email' required='')
+    .cn-box
+      i.fa-solid.fa-person-half-dress
+      input(type='text' name='gender' placeholder='Enter Your Gender' required='')
+    .cn-box
+      i.fa-solid.fa-key
+      input(type='password' name='password' placeholder='Enter Your Password' required='')
+    div
+      button.btn-cn Submit
+      
+      script(src='../static/index.js')
+
