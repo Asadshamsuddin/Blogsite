@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Fjalla+One&display=swap');
+
+.main-container {
+    background-color: #f7f0f0;
+    font-family: 'bree serif';
+}
+
+.nav-right .nav-btn {
+    padding: 8px 4px;
+    background-color: green;
+    border: 1px solid var(--color7);
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'bree serif';
+}
+.nav-right .nav-btn a{
+    padding: 8px 8px;
+}
+.nav-right .nav-btn a:hover{
+    color: greenyellow;
+}
+.navigation .nav-left a {
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+}
+
+.nav-right .nav-btn a {
+    text-decoration: none;
+    color: var(--color7);
+}
+
+.write-container {
+    background-color:var(--color4);
+}
+
+.write {
+    height: 400px;
+    background-color: var(--color4);
+    display: flex;
+    align-items: center;
+}
+
+.write .w-left {
+    padding: 14px;
+}
+
+.write .w-left h1 {
+    margin: 6px 0px;
+    color: var(--color7);
+    font-size: 2.5rem;
+    font-family: 'bree serif';
+    
+}
+.m-main-con{
+    margin-top: 30px;
+}
+
+.write .w-left p {
+    padding: 5px 0px;
+    color: var(--color7);
+    font-family: var(--nav-font-1);
+    line-height: 1.3em;
+}
+
+.write .w-left .btn-sn {
+    padding: 9px 5px;
+    border-radius: 23px;
+    border: 2px solid var(--color7);
+    margin-top: 20px;
+    background-color:var(--color4);
+    transition: all 0.3s ease-in;
+    font-family: 'bree serif';
+    font-size: 1rem;
+}
+
+.write .w-left .btn-sn a {
+    text-decoration: none;
+    padding: 10px 30px;
+    color: var(--color7);
+}
+.write .w-left .btn-sn a:hover{
+    color: greenyellow;
+}
+.wrt-hm{
+    /* background-color: blueviolet; */
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+.wrt-hm .wrt-left{
+    padding: 24px;
+}
+.wrt-hm .wrt-left h1{
+    font-size: 2.5rem;
+    font-family: 'bree serif';
+}
+.wrt-hm .wrt-right{
+    padding: 40px 14px;
+    font-family:var(--nav-font-1);
+}
+.ft{
+    font-family: var(--nav-font-1);
+    margin-top: 40px;
+    height: 160px;
+}
+.ft .fa-solid{
+padding:0px 16px;
+font-size: 34px;
+margin-right: 50px;
+
+}
+.ft h3{
+    background-color: var(--color6);
+    text-align: right;
+    color: var(--color7);
+    margin: 18px 0px;
+    padding: 18px 0px;
+    font-size: 2rem;
+    transition: all 0.3 ease-in-out;
+}
+
+.ft h3 a{
+    color: var(--color7);
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+.ft h3 a:hover{
+    color: var(--color4);
+}
+

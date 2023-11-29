@@ -1,0 +1,39 @@
+.nav-width {
+    width: 85vw;
+}
+.width-1 {
+    width: 85vw;
+}
+
+.width-2 {
+    width: 85vw;
+}
+.width-4 {
+    width: 70vw;
+}
+.width-5 {
+    width: 65vw;
+}
+
+.m-auto {
+    margin: auto;
+}
+.font-1{
+    font-family: var(--nav-font-1);
+}
+.font-2{
+    font-family: var(--nav-font-2);
+}
+.font-3{
+    font-family: var(--font-3);
+}
+.font-4{
+    font-family: 'bree serif';
+}
+.center{
+    text-align: center;
+}
+.home-left-content .home-button .fa-solid{
+  padding-left:6px;
+}
+

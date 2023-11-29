@@ -1,0 +1,459 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Fjalla+One&display=swap');
+
+:root {
+    --color1: red;
+    --color2: #ffc010;
+    --color3: blueviolet;
+    --color4: green;
+    --color5: pink;
+    --color6: black;
+    --color7: white;
+    --color8: gray;
+    --color9: #e9494f;
+    --color-10: rgb(51, 48, 48);
+    --nav-line: rgb(18 18 2 / 27%);
+    --home-bg-color: #ed989b;
+    --nav-font-1: 'Ubuntu', sans-serif;
+    --nav-font-2: 'Roboto', sans-serif;
+    --font-3: 'Baloo Bhai 2', sans-serif;
+    --nav-max-height: 70px;
+    --width-4:80vw;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    overflow: none;
+}
+
+/* Navigation */
+.main-container {
+    background-color: var(--color2);
+    position: sticky;
+    top: 0px;
+}
+
+.navigation {
+    height: var(--nav-max-height);
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navigation img {
+    height: 70px;
+    width: 70px;
+}
+
+.navigation ul {
+    display: flex;
+    align-items: center;
+}
+
+.navigation ul li {
+    list-style: none;
+    margin-left: 16px;
+}
+
+.navigation ul li a {
+    text-decoration: none;
+    color: var(--color6);
+    font-family: sans-serif;
+}
+
+.navigation ul li a:hover {
+    color: rgb(75, 70, 70);
+}
+
+.search .btn {
+    padding: 7px 10px;
+    border-radius: 23px;
+    border: 2px solid var(--color6);
+    color: var(--color7);
+    background-color: var(--color6);
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1rem;
+    transition: all 0.4s ease-in;
+
+}
+
+.search .btn:hover {
+    cursor: pointer;
+    background-color: var(--color2);
+    color: var(--color6);
+}
+
+.search .btn a {
+    text-decoration: none;
+    color: white;
+    padding: 12px 0px;
+}
+
+.search .btn a:hover {
+    color: black;
+}
+
+.nav-line {
+    border: 0.1px solid var(--nav-line);
+}
+
+/* Home Section  */
+.home-container {
+    background-color: var(--color2);
+    font-family: var(--nav-font-1);
+}
+
+.content {
+    height: 450px;
+    /* background-color: var(--home-bg-color); */
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content .home-left-content {
+    padding: 0;
+}
+
+.line {
+    border: 1px solid var(--color6);
+}
+
+.content .home-left-content .home-title {
+    color: var(--color6);
+    font-size: 6rem;
+    font-family: 'bree serif';
+}
+
+.content .home-left-content .home-content {
+    padding: 12px 0px;
+    line-height: 23px;
+}
+
+.home-right-content img {
+    display: flex;
+    text-align: center;
+    height: 450px;
+}
+
+.home-button {
+    padding: 12px 30px;
+    border-radius: 23px;
+    margin-top: 30px;
+    border: 2px solid var(--color6);
+    background-color: var(--color6);
+    color: var(--color7);
+    font-size: 1rem;
+    transition: all 0.2s ease-in;
+    font-family: var(--nav-font-1);
+}
+
+.home-button:hover {
+    background-color: var(--color2);
+    cursor: pointer;
+}
+
+.home-button a {
+    text-decoration: none;
+    color: white;
+    transition: all 0.4s ease-in;
+    padding: 15px 0px;
+    font-family: 'Bree Serif';
+}
+
+.home-button a:hover {
+    color: black;
+}
+
+.home-line {
+    border: 0.3px solid rgb(24, 24, 24);
+    border-radius: 12px;
+}
+
+/* mission section  */
+.section-container {
+    margin: 20px 0px;
+}
+
+.mission-section {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* background-color: aqua; */
+}
+
+.mission-section .card {
+    border: 3px solid var(--color2);
+    box-shadow: #bbb3b3 5px 4px;
+    height: 170px;
+    width: 220px;
+    border-radius: 10px;
+    margin: 4px 6px;
+    padding: 6px 12px;
+}
+
+.mission-section .card img {
+    height: 50px;
+    width: 50px;
+    display: block;
+    margin: auto;
+    padding: 8px 6px;
+}
+
+.mission-section .card p {
+    padding: 8px 6px;
+    text-align: center;
+    font-family: var(--nav-font-2);
+    font-size: 1rem;
+}
+
+.card .section-heading {
+    text-align: center;
+    font-family: var(--nav-font-1);
+    font-size: 1.2rem;
+}
+
+/* Blog section  */
+
+.blog-heading {
+    margin: 30px 0px;
+    margin-top: 40px;
+    font-size: 2rem;
+    font-family: 'bree serif';
+}
+
+.blog {
+    height: 710px;
+    /* background-color: var(--color2); */
+}
+
+.article {
+    display: flex;
+}
+
+.article .article-img-left img {
+    height: 130px;
+    width: 170px;
+}
+
+.article .article-content-right {
+    align-self: center;
+    padding: 7px 20px;
+}
+
+.article .article-content-right .article-content-right-desc {
+    padding-top: 3px;
+}
+
+.article1 {
+    display: flex;
+    margin-top: 20px;
+}
+
+.article1 img {
+    height: 130px;
+    width: 170px;
+}
+
+.article1 .article1-content-right .article1-content-right-desc {
+    padding-top: 3px;
+}
+
+.article1 .article1-content-right {
+    align-self: center;
+    padding: 7px 20px;
+}
+
+.article2 .article2-content-right {
+    align-self: center;
+    padding: 7px 20px;
+}
+
+.article2 .article2-content-right .article2-content-right-desc {
+    padding-top: 3px;
+}
+
+.article2 img {
+    height: 130px;
+    width: 170px;
+}
+
+.article2 {
+    display: flex;
+    margin-top: 20px;
+}
+
+.article3 {
+    display: flex;
+    margin-top: 20px;
+}
+
+.article3 img {
+    height: 130px;
+    width: 170px;
+}
+
+.article3 .article3-content-right .article3-content-right-desc {
+    padding-top: 3px;
+}
+
+.article3 .article3-content-right {
+    align-self: center;
+    padding: 7px 20px;
+}
+
+
+.article-content-right a {
+    text-decoration: none;
+    color: var(--color6);
+}
+
+.article1-content-right a {
+    text-decoration: none;
+    color: var(--color6);
+}
+
+.article2-content-right a {
+    text-decoration: none;
+    color: var(--color6);
+}
+
+.article3-content-right a {
+    text-decoration: none;
+    color: var(--color6);
+}
+
+.article-content-right a:hover {
+    color: var(--color2);
+}
+
+.article1-content-right a:hover {
+    color: var(--color2);
+}
+
+.article2-content-right a:hover {
+    color: var(--color2);
+}
+
+.article3-content-right a:hover {
+    color: var(--color2);
+}
+
+/* Targated People  */
+.targate-container {
+    /* background-color: brown; */
+    margin: 12px 0px;
+    margin-top: 30px;
+}
+
+.targated-people-container {
+    /* background-color: aqua; */
+    background-color: white;
+}
+
+.targated-people {
+    height: 320px;
+    /* background-color: red; */
+}
+
+.targate {
+    height: 225px;
+    width: 250px;
+    /* background-color: blue; */
+    margin: 10px 8px;
+}
+
+.targate a {
+    text-decoration: none;
+    color: var(--color6);
+}
+
+.targated-people-container h2 {
+    font-family: 'bree serif';
+    font-size: 2rem;
+}
+
+.targate a:hover {
+    color: var(--color2);
+}
+
+
+.targate img {
+    height: 135px;
+    width: 249px;
+}
+
+.targated-people {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Interaction Section */
+.interaction-container {
+    background-color: var(--color6);
+}
+
+.interaction {
+    background-color: var(--color6);
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.intr-1 {
+    height: 180px;
+    width: 300px;
+    margin-top: 20px;
+    /* background-color: #ed989b; */
+}
+.intr-1 img {
+   height: 30px;
+   width: 30px;
+}
+
+.intr-1 p {
+    padding: 7px 12px;
+    color: white;
+}
+.intr-1 h4 {
+    color: white;
+}
+
+.intr-1 p a {
+    text-decoration: none;
+    color: var(--color7);
+}
+.intr-1 a:hover{
+    color:var(--color2) ;
+}
+
+/* Footer  */
+.footer-container {
+    background-color: var(--color6);
+    font-family: var(--nav-font-1);
+}
+
+.footer-content .contact {
+    margin-top: 20px;
+    padding: 4px 12px;
+    cursor: pointer;
+    border-right: 2px solid var(--color7)
+}
+
+.footer {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    background-color: var(--color6);
+    padding: 6px 0px;
+    color: var(--color7);
+    font-family: var(--nav-font-1);
+}

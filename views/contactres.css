@@ -1,0 +1,24 @@
+@media only screen and (max-width: 600px) {
+    *{
+        overflow: none;
+    }
+    .main-container .navigation{
+        height: 100px;
+        flex-direction: column;
+    }
+    .search input{
+        margin-top: 0px;
+    }
+    .interaction-container .interaction{
+        height: 500px;
+    }
+    .signup h2{
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .navigation ul .item-2 {
+        display: none;
+    }
+}

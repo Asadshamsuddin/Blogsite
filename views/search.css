@@ -1,0 +1,40 @@
+.search input {
+    padding: 5px;
+    outline: none;
+    border: 1px solid var(--color6);
+    border-radius: 5px;
+    margin: 0px 6px;
+}
+
+
+.search .btn-search {
+    padding: 5px 6px;
+    background-color: var(--color6);
+    color: var(--color7);
+    border-radius: 5px;
+    border: 1px solid var(--color6);
+}
+.search .btn-search:hover{
+    background-color: var(--nav-font-1);
+    color: var(--color6);
+    cursor: pointer;
+}
+
+.blog .blog-heading {
+    font-size: 1.5rem;
+}
+
+.footer {
+    background-color:#ff8d00;
+    color: var(--color6);
+    
+}
+.footer-container{
+    background-color:#ff8d00
+}
+.intr-1 a:hover{
+    color:var(--color2) ;
+}
+.h-1{
+    padding: 3px 0px;
+}

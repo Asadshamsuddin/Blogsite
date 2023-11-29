@@ -1,0 +1,15 @@
+/* search  */
+@media only screen and (max-width: 720px) {
+    .main-container .navigation{
+        height: 100px;
+        flex-direction: column;
+    }
+    .search input{
+        margin-top: 0px;
+    }
+    .interaction-container .interaction{
+        height: 500px;
+    }
+    
+    }
+
